@@ -33,6 +33,21 @@ namespace WebAppTilesPage
             // ready for production, use the build tool at https://modernizr.com to pick only the tests you need
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                             "~/Scripts/modernizr-*"));
+
+            bundles.Add(new ScriptBundle("~/bundles/DevExtremeJs").Include(
+                "~/Scripts/cldr.js",
+                "~/Scripts/cldr/*.js",
+                "~/Scripts/globalize.js",
+                //"~/Scripts/devextreme-localization/dx.messages.en.js",
+                "~/Scripts/globalize/*.js",
+
+                //"~/Scripts/dx.viz.js",
+                "~/Scripts/dx.web.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
+                "~/Scripts/jquery-{version}.min.js"));
+
+
         }
     }
 }
