@@ -28,11 +28,43 @@
     <link rel="stylesheet" type="text/css" href="/Content/TilesPage.css" />
     <script src="/Scripts/TilesPage.js"></script>
 </head>
-<body class="dx-viewport">
-    <div class="container">
+<body class="dx-viewport ">
+    <div class="container body-content" style="width: 600px; padding-top: 20px; border: 1px solid lightgray;">
         <div class="row">
-            <div id="tileview"></div>    
-        </div>       
+            <div class="col-md-8">
+                <div class="tilerow-caption">For Release</div>
+                <div id="forReleaseItems"></div> 
+            </div>
+            <div class="col-md-4">
+                <div class="tilerow-links">
+                    <a href="#">New Sales Quote</a>
+                    <a href="#">New Sales Order</a>    
+                </div>
+            </div>
+        </div>    
+        <div class="row">
+            <div class="col-md-8">
+                <div class="tilerow-caption">Sales Orders Released Not Sheeped</div>
+                <div id="releasedNotSheepedItems"></div>    
+            </div>
+            <div class="col-md-4">
+                <div class="tilerow-links">
+                    <a href="#">Navigate</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="tilerow-caption">Returns</div>
+                <div id="returnedItems"></div>    
+            </div>
+            <div class="col-md-4">
+                <div class="tilerow-links">
+                    <a href="#">New Sales Return Order</a>
+                    <a href="#">New Sales Credit Memo</a>    
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
